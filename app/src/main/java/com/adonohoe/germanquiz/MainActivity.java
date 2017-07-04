@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // Question 3 input; das and die are correct
         CheckBox dasCheckBox = (CheckBox) findViewById(R.id.das_checkbox);
         CheckBox dieCheckBox = (CheckBox) findViewById(R.id.die_checkbox);
+        CheckBox delCheckBox = (CheckBox) findViewById(R.id.del_checkbox);
 
         // Question 4 input; Frau is correct
         RadioButton frauRadioButton = (RadioButton) findViewById(R.id.frau_radio_button);
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        if(dasCheckBox.isChecked() && dieCheckBox.isChecked()) {
+        if(dasCheckBox.isChecked() && dieCheckBox.isChecked() & !delCheckBox.isChecked()) {
             score += 1;
         }
 

@@ -13,13 +13,9 @@
         tools:context="com.example.android.GermanQuiz.MainActivity">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="Test Your German!"
-            android:textSize="32sp"
             android:textAlignment="center"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/colorAccent"/>
+            style="@style/HeadingTextStyle" />
 
         <TextView
             style="@style/QuestionStyle"
@@ -32,17 +28,13 @@
             android:layout_margin="16dp">
             <RadioButton
                 android:id="@+id/true_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="True"
-                android:layout_marginBottom="16dp"
-                android:textSize="16sp"/>
+                style="@style/RadioStyle" />
             <RadioButton
                 android:id="@+id/false_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/RadioStyle"
                 android:text="False"
-                android:textSize="16sp"/>
+               />
         </RadioGroup>
 
         <TextView
@@ -51,11 +43,8 @@
 
         <EditText
             android:id="@+id/word_for_german_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="Enter German word here"
-            android:layout_margin="16dp"
-            android:inputType="textCapWords"/>
+            style="@style/EditTextStyle" />
 
         <TextView
             style="@style/QuestionStyle"
@@ -63,30 +52,19 @@
 
         <CheckBox
             android:id="@+id/das_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Das"
-            android:textSize="16sp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="16dp"/>
+            style="@style/CheckBoxStyle" />
 
         <CheckBox
             android:id="@+id/die_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Die"
-            android:textSize="16sp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="16dp"/>
+            style="@style/CheckBoxStyle"
+           />
 
         <CheckBox
             android:id="@+id/del_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Del"
-            android:textSize="16sp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="16dp"/>
+            style="@style/CheckBoxStyle"/>
 
         <TextView
             style="@style/QuestionStyle"
@@ -100,18 +78,13 @@
 
             <RadioButton
                 android:id="@+id/pferd_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Pferd"
-                android:layout_marginBottom="16dp"
-                android:textSize="16sp"/>
+                style="@style/RadioStyle"/>
 
             <RadioButton
                 android:id="@+id/frau_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Frau"
-                android:textSize="16sp"/>
+                style="@style/RadioStyle"
+                android:text="Frau" />
         </RadioGroup>
 
         <TextView
@@ -120,17 +93,14 @@
 
         <EditText
             android:id="@+id/word_for_sky_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="Enter German word here"
-            android:layout_margin="16dp"
-            android:inputType="textCapWords"/>
+            style="@style/EditTextStyle" />
 
         <Button
             android:onClick="submitQuiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16sp"
+            android:layout_margin="16dp"
             android:text="Submit"
             android:background="@color/colorAccent"
             android:textColor="@android:color/white"/>

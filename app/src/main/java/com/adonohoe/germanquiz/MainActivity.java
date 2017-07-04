@@ -18,14 +18,24 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitQuiz(View view) {
         int score = calculateScore();
-        Toast.makeText(this, "Your score is " + score + " out of 5!", Toast.LENGTH_LONG).show();
+
+        String message = getMessage(score);
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    private String getMessage(int score) {
+        // Pass is 3+ questions passed, else the user fails
+        if(score >= 3) {
+            return "Congrats! You passed with a score of " + score + " out of 5!";
+        } else {
+            return "Bummer! You failed with a score of " + score + " out of 5!";
+        }
     }
 
     private int calculateScore() {
         int score = 0;
 
-        // Question 1 inputs; false is correct
-        RadioButton trueRadioButton = (RadioButton) findViewById(R.id.true_radio_button);
+        // Question 1;false is correct
         RadioButton falseRadioButton = (RadioButton) findViewById(R.id.false_radio_button);
 
         // Question 2 input; Deutsch is correct
@@ -34,10 +44,8 @@ public class MainActivity extends AppCompatActivity {
         // Question 3 input; das and die are correct
         CheckBox dasCheckBox = (CheckBox) findViewById(R.id.das_checkbox);
         CheckBox dieCheckBox = (CheckBox) findViewById(R.id.die_checkbox);
-        CheckBox delCheckBox = (CheckBox) findViewById(R.id.del_checkbox);
 
         // Question 4 input; Frau is correct
-        RadioButton pferdRadioButton = (RadioButton) findViewById(R.id.pferd_radio_button);
         RadioButton frauRadioButton = (RadioButton) findViewById(R.id.frau_radio_button);
 
         // Question 5 input; Himmel is correct
@@ -62,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
         if(wordForSkyEditText.getText().toString().equals("Himmel")) {
             score += 1;
         }
-
 
         return score;
     }

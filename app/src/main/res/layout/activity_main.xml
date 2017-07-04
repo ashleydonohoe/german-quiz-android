@@ -97,6 +97,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="16dp">
+
             <RadioButton
                 android:id="@+id/pferd_radio_button"
                 android:layout_width="wrap_content"
@@ -104,6 +105,7 @@
                 android:text="Pferd"
                 android:layout_marginBottom="16dp"
                 android:textSize="16sp"/>
+
             <RadioButton
                 android:id="@+id/frau_radio_button"
                 android:layout_width="wrap_content"
@@ -132,7 +134,5 @@
             android:text="Submit"
             android:background="@color/colorAccent"
             android:textColor="@android:color/white"/>
-
-
     </LinearLayout>
 </ScrollView>

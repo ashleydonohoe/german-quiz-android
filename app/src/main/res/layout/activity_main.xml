@@ -1,0 +1,27 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.GermanQuiz.MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Test Your German!"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorAccent"/>
+        
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="1. What is the German word for 'German'?"/>
+
+    </LinearLayout>
+</ScrollView>

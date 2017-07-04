@@ -23,5 +23,75 @@
             style="@style/QuestionStyle"
             android:text="1. What is the German word for 'German'?"/>
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter German word here"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="2. 'Voiture' the German word for 'car'?"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <RadioButton
+                android:id="@+id/true_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="True"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/false_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="3. Select all the correct German words for 'the'."/>
+
+        <CheckBox
+            android:id="@+id/das_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Das"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/die_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Die"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <CheckBox
+            android:id="@+id/del_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Del"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            android:text="Submit"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"/>
+
+
     </LinearLayout>
 </ScrollView>

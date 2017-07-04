@@ -8,6 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         tools:context="com.example.android.GermanQuiz.MainActivity">
 
         <TextView
@@ -18,20 +20,10 @@
             android:textAlignment="center"
             android:layout_marginTop="8dp"
             android:textColor="@color/colorAccent"/>
-        
-        <TextView
-            style="@style/QuestionStyle"
-            android:text="1. What is the German word for 'German'?"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter German word here"
-            android:layout_margin="16dp"/>
 
         <TextView
             style="@style/QuestionStyle"
-            android:text="2. 'Voiture' the German word for 'car'?"/>
+            android:text="1. 'Voiture' the German word for 'car'?"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -52,6 +44,18 @@
                 android:text="False"
                 android:textSize="16sp"/>
         </RadioGroup>
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="2. What is the German word for 'German'?"/>
+
+        <EditText
+            android:id="@+id/word_for_german_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter German word here"
+            android:layout_margin="16dp"
+            android:inputType="textCapWords"/>
 
         <TextView
             style="@style/QuestionStyle"
@@ -83,6 +87,42 @@
             android:textSize="16sp"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"/>
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="4. Which word means 'woman' in German?"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <RadioButton
+                android:id="@+id/pferd_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pferd"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/frau_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frau"
+                android:textSize="16sp"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="5. What is the German word for 'sky'?"/>
+
+        <EditText
+            android:id="@+id/word_for_sky_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter German word here"
+            android:layout_margin="16dp"
+            android:inputType="textCapWords"/>
 
         <Button
             android:layout_width="match_parent"
